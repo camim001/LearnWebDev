@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>LearWebDev</title>
+    <title>Button Click Example</title>
 </head>
 <body>
     <button id="myButton">Click Me</button>
@@ -12,11 +12,11 @@
         const button = document.getElementById('myButton');
         const message = document.getElementById('message');
 
+        button.addEventListener('mousemove', () => { message.textContent = 'Mouse OVER'; });
         // Add click event listener
         button.addEventListener('click', () => {
             message.textContent = 'Button was clicked!';
         });
     </script>
 </body>
-
 </html>
